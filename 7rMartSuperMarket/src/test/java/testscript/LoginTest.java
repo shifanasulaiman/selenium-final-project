@@ -52,7 +52,7 @@ public class LoginTest extends Base
 		 boolean is_homePage_loaded=loginpage.is_alert_displayed_for_invalidCredentials();
 		 Assert.assertTrue(is_homePage_loaded,Constant.ERROR_MESSAGE_FOR_LOGINPAGE);
   }
-  @Test
+  @Test(groups = {"smoke"})
   public void verify_user_is_able_to_login_With_Invalid_username_and_valid_password() throws IOException 
   {
 	     String username=ExcelUtility.getstringdata(3,0,"loginpage");
@@ -64,7 +64,7 @@ public class LoginTest extends Base
 		 boolean is_homePage_loaded=loginpage.is_alert_displayed_for_invalidCredentials();
 		 Assert.assertTrue(is_homePage_loaded,Constant.ERROR_MESSAGE_FOR_LOGINPAGE);
   }
-  @Test
+  @Test(retryAnalyzer = retry.Retry.class)
   public void verify_user_is_able_to_login_With_Invalid_username_and_Invalid_password() throws IOException 
   {
 	     String username=ExcelUtility.getstringdata(4,0,"loginpage");
