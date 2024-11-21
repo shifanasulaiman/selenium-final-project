@@ -4,12 +4,11 @@
 <parameter name="browzer" value="chrome"></parameter>
 <parameter name="username" value="admin"></parameter>
 <parameter name="password" value="admin"></parameter>
-<parameter name="adminusername" value="staff1"></parameter>
-<parameter name="adminpassword" value="staff1"></parameter>
-<parameter name="usertype" value="staff"></parameter>
+<parameter name="adminusername" value="admins"></parameter>
+<parameter name="adminusertype" value="admin"></parameter>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testscript.LoginTest"> </class>
+      <class name="testscript.AdminSearch_Test"> </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

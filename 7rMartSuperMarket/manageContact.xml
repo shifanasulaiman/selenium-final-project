@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="browzer" value="chrome"></parameter>
+	<parameter name="username" value="admin"></parameter>
+	<parameter name="password" value="admin"></parameter>
+	<parameter name="phone" value="9876543213"></parameter>
+	<parameter name="email" value="context@gmail.com"></parameter>
+	<parameter name="address" value="canada"></parameter>
+	<parameter name="delivaryTime" value="two hours"></parameter>
+	<parameter name="delivaryCharge" value="chrome"></parameter>
+
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="testscript.ManageContactTest"></class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscript.SubCategory_Test">
+      <class name="testscript.AdminSearch_Test">
         <methods>
-          <include name="verify_is_able_open_the_SubCAtegory_Page"/>
+          <include name="verify_user_is_able_search_an_adminuser"/>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- testscript.SubCategory_Test -->
+      </class> <!-- testscript.AdminSearch_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

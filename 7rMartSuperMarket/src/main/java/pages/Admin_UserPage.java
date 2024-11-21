@@ -4,10 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
+
 
 import utilities.PageUtility;
-import utilities.Wait_Utility;
+
 
 public class Admin_UserPage 
 {
@@ -43,7 +43,7 @@ public class Admin_UserPage
 	public Admin_UserPage selectAdmin_userType(String selectUserTypefromDropdown)
 	{
 		PageUtility pageutility=new PageUtility(driver);
-		pageutility.selectByvalueofElement(usertype, selectUserTypefromDropdown);
+		pageutility.selectByVisibleTextofElement(usertype, selectUserTypefromDropdown);
 		return this;
 	}
 	public Admin_UserPage is_user_able_to_click_the_create_button()
@@ -52,7 +52,9 @@ public class Admin_UserPage
 		return this;
 	}
 	public boolean getvalid_confirmationFrom_user_creation()
-	{
+	{   
+		//PageUtility pageutility=new PageUtility(driver);
+	    //pageutility.dismissAlert(userCreateConfirmation);
 		return userCreateConfirmation.isDisplayed();
 	}
 

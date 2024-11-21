@@ -20,7 +20,11 @@ public class Wait_Utility
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(200));
 		wait.until(ExpectedConditions.elementToBeClickable(element));   
 	}
-
+    public boolean waitForTextToBePresent(WebDriver driver,WebElement element,String expectedtext )
+    {
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(200));
+        return wait.until(ExpectedConditions.textToBePresentInElement(element,expectedtext)); 
+    }
 }
 
 

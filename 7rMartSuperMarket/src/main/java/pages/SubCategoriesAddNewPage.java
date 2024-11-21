@@ -36,11 +36,11 @@ public class SubCategoriesAddNewPage
 		wait.waitforvisibilityofWebElement(driver, addNewButton);
 		addNewButton.click();
 	}
-	public void verify_user_able_to_select_the_category(String subcategoryValue)
+	public void verify_user_able_to_select_the_category(int subcategoryValue)
 	{
 		wait.waitforvisibilityofWebElement(driver, selectCategory);
 		PageUtility pageutilities = new PageUtility(driver);
-		pageutilities.selectByvalueofElement(selectCategory, subcategoryValue);
+		pageutilities.selecttheElementBytheIndexValue(selectCategory, subcategoryValue);
 	}
 	public void verify_user_is_able_to_enter_thevalue_subcategory(String subcategoryvalue)
 	{
@@ -49,7 +49,7 @@ public class SubCategoriesAddNewPage
 	}
 	public void verify_user_is_able_to_upload_the_file(String IMAGEUPLOADPATH)
 	{
-		wait.waitforvisibilityofWebElement(driver, chooseFile);
+		wait.waitforElementTobeClickable(driver, chooseFile);
 		chooseFile.sendKeys(IMAGEUPLOADPATH);
 	}
 	public void verify_user_is_able_to_save_the_subcategory_field()

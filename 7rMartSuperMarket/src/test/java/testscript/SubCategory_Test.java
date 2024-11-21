@@ -14,7 +14,7 @@ public class SubCategory_Test extends Base
 {
   @Test
   @Parameters({"category","subcategoryvalue","filepath"})
-  public void verify_is_able_open_the_SubCAtegory_Page(String category, String subcategoryvalue, String filepath) throws IOException
+  public void verify_is_able_open_the_SubCAtegory_Page(int category, String subcategoryvalue, String filepath) throws IOException
   {
 	     String username=ExcelUtility.getstringdata(1, 0,"loginpage");
 		 String password=ExcelUtility.getstringdata(1, 1,"loginpage" );

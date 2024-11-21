@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <parameter name="browzer" value="chrome"></parameter>
-<parameter name="category" value="164"></parameter>
+<parameter name="category" value="1"></parameter>
 <parameter name="subcategoryvalue" value="Television"></parameter>
 <parameter name="filepath" value="C:\Users\Shifana s\eclipse-workspace\7rMartSuperMarket\src\main\resources\TV.jpg"></parameter>
 <test thread-count="5" name="Test">
